@@ -1,0 +1,22 @@
+name: Validate userscript
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Check JavaScript syntax
+        run: node --check copilot-workday-budget.user.js
+      - name: Run tests
+        run: node --test tests/userscript.test.cjs
