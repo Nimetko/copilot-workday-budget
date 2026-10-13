@@ -4,7 +4,7 @@ A small [Tampermonkey](https://www.tampermonkey.net/) userscript that displays h
 
 It adds a budget dashboard directly to the [GitHub Copilot usage settings](https://github.com/settings/copilot/features) page. **These are planning averages, not daily spending limits.**
 
-[**Install the userscript**](https://github.com/Nimetko/copilot-workday-budget/raw/refs/heads/main/copilot-workday-budget.user.js)
+[**Install the userscript**](https://github.com/Nimetko/copilot-workday-budget/raw/refs/heads/master/copilot-workday-budget.user.js)
 
 ## What it shows
 
@@ -20,7 +20,7 @@ The displayed budget and local preferences are read from the page and Tampermonk
 ## Installation
 
 1. Install the [Tampermonkey browser extension](https://www.tampermonkey.net/).
-2. Click **[Install the userscript](https://github.com/Nimetko/copilot-workday-budget/raw/refs/heads/main/copilot-workday-budget.user.js)**.
+2. Click **[Install the userscript](https://github.com/Nimetko/copilot-workday-budget/raw/refs/heads/master/copilot-workday-budget.user.js)**.
 3. Approve the installation in Tampermonkey.
 4. Open or refresh **[GitHub Copilot settings](https://github.com/settings/copilot/features)**.
 
@@ -30,9 +30,9 @@ The dashboard is shown only when the GitHub page contains a numeric usage/limit 
 
 ## Updates
 
-The installed script points `@updateURL` and `@downloadURL` to this repository's `main` branch. Tampermonkey periodically checks for a higher `@version` and can install updates automatically, according to the user's update settings. You can also check for script updates manually in the Tampermonkey dashboard.
+The installed script points `@updateURL` and `@downloadURL` to this repository's `master` branch. Tampermonkey periodically checks for a higher `@version` and can install updates automatically, according to the user's update settings. You can also check for script updates manually in the Tampermonkey dashboard.
 
-**Existing users of a manually pasted v1.5.0 script:** Use the installation link once to install v1.5.1 with the update URLs. Script storage is keyed to the original `@name` and `@namespace`, which are deliberately unchanged.
+**Existing users with missing update URLs or URLs pointing to `main`:** After v1.6.1 is published, use the installation link once to install it with the corrected update URLs. Script storage is keyed to the original `@name` and `@namespace`, which are deliberately unchanged.
 
 ## How it works
 
@@ -64,15 +64,15 @@ A small GitHub Actions workflow runs both checks on pushes and pull requests.
 ### Publishing a change
 
 1. Edit `copilot-workday-budget.user.js`.
-2. Increase the `@version` field (for example, `1.5.1` → `1.5.2`); otherwise Tampermonkey may not detect a new release.
-3. Run the checks, commit, and push to `main`.
+2. Increase the `@version` field (for example, `1.6.1` → `1.6.2`); otherwise Tampermonkey may not detect a new release.
+3. Run the checks, commit, and push to `master`.
 4. Users receive the update on their next applicable Tampermonkey update check.
 
 **If you rename the GitHub account or repository**, update both `@updateURL` and `@downloadURL`, along with the links in this README, **before publishing**. The initial URLs assume the repository name `Nimetko/copilot-workday-budget`.
 
 ## Share with a colleague
 
-> I made a small Tampermonkey userscript that adds a workday credit budget to the GitHub Copilot usage page. Install Tampermonkey, then click [Install the script](https://github.com/Nimetko/copilot-workday-budget/raw/refs/heads/main/copilot-workday-budget.user.js) and refresh your [Copilot settings](https://github.com/settings/copilot/features). Updates are managed through Tampermonkey.
+> I made a small Tampermonkey userscript that adds a workday credit budget to the GitHub Copilot usage page. Install Tampermonkey, then click [Install the script](https://github.com/Nimetko/copilot-workday-budget/raw/refs/heads/master/copilot-workday-budget.user.js) and refresh your [Copilot settings](https://github.com/settings/copilot/features). Updates are managed through Tampermonkey.
 
 ## License
 

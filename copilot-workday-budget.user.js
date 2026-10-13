@@ -1,15 +1,20 @@
-
- // ==UserScript==
- // @name         GitHub Copilot - Workday Credit Budget
- // @namespace    https://github.com/settings/copilot/features
- // @version      1.6.0
- // @description  Copilot daily budget with credit buffer and vacation days
- // @match        https://github.com/settings/copilot/features*
- // @run-at       document-idle
- // @noframes
- // @grant        GM_getValue
- // @grant        GM_setValue
- // ==/UserScript==
+// ==UserScript==
+// @name         GitHub Copilot - Workday Credit Budget
+// @namespace    https://github.com/settings/copilot/features
+// @version      1.6.1
+// @description  Copilot daily budget with credit buffer and vacation days
+// @author       Nimetko
+// @license      MIT
+// @homepageURL  https://github.com/Nimetko/copilot-workday-budget
+// @supportURL   https://github.com/Nimetko/copilot-workday-budget/issues
+// @match        https://github.com/settings/copilot/features*
+// @updateURL    https://raw.githubusercontent.com/Nimetko/copilot-workday-budget/master/copilot-workday-budget.user.js
+// @downloadURL  https://raw.githubusercontent.com/Nimetko/copilot-workday-budget/master/copilot-workday-budget.user.js
+// @run-at       document-idle
+// @noframes
+// @grant        GM_getValue
+// @grant        GM_setValue
+// ==/UserScript==
 
  (() => {
    'use strict';

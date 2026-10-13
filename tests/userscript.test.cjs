@@ -33,8 +33,8 @@ function loadBudgetHelpers(initialStorage = {}) {
 }
 
 test('shipping metadata points at the canonical GitHub repository', () => {
-  const expected = 'https://raw.githubusercontent.com/Nimetko/copilot-workday-budget/main/copilot-workday-budget.user.js';
-  assert.match(script, /^\/\/ @version\s+1\.5\.1\s*$/m);
+  const expected = 'https://raw.githubusercontent.com/Nimetko/copilot-workday-budget/master/copilot-workday-budget.user.js';
+  assert.match(script, /^\/\/ @version\s+1\.6\.1\s*$/m);
   assert.ok(script.includes(`// @updateURL    ${expected}`));
   assert.ok(script.includes(`// @downloadURL  ${expected}`));
   assert.match(script, /^\/\/ @match\s+https:\/\/github\.com\/settings\/copilot\/features\*\s*$/m);
